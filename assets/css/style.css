@@ -34,7 +34,7 @@ ul {
   background-color: #fff;
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 9;
 }
 .header__container {
   display: flex;
@@ -102,8 +102,8 @@ ul {
 .top {
   position: relative;
   background-color: #F6F5F4;
-  background-image: url(../img/coffee.png), url(../img/grains.png), url(../img/cookie.png), url(../img/sinabon.png), url(../img/table.png);
-  background-position: calc(100% - 245px) calc(100% - 261px), calc(100% - 100px) 60px, calc(100% - 385px) 368px, 100% 100%, 100% 0px;
+  background-image: url(../img/table.png);
+  background-position: 100% 0px;
   background-repeat: no-repeat;
   height: 770px;
 }
@@ -154,6 +154,30 @@ ul {
 .top__button:hover {
   background-color: rgb(162, 101, 57);
   color: #fff;
+}
+.top__image {
+  transition: 0.3s ease-in-out;
+  position: absolute;
+}
+.top__image:hover {
+  transform: rotate(10deg);
+}
+.top__image1 {
+  right: 355px;
+  top: 75px;
+}
+.top__image2 {
+  position: absolute;
+  right: 85px;
+  top: 41px;
+}
+.top__image3 {
+  right: 425px;
+  top: 435px;
+}
+.top__image4 {
+  right: 29px;
+  top: 300px;
 }
 .top__bottom {
   position: absolute;
