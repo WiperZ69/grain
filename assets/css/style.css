@@ -100,6 +100,8 @@ ul {
 }
 
 .top {
+  display: flex;
+  justify-content: space-between;
   position: relative;
   background-color: #F6F5F4;
   background-image: url(../img/table.png);
@@ -112,6 +114,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  z-index: 1;
 }
 .top__title {
   color: rgb(69, 64, 61);
@@ -163,7 +166,7 @@ ul {
   transform: rotate(10deg);
 }
 .top__image1 {
-  right: 355px;
+  right: 375px;
   top: 75px;
 }
 .top__image2 {
@@ -192,6 +195,7 @@ ul {
 .menu__container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .menu__title {
   font-weight: 700;
@@ -204,7 +208,7 @@ ul {
 }
 .menu__content {
   margin-top: 48px;
-  height: 852px;
+  height: auto;
 }
 .menu__coffee {
   display: none;
@@ -292,4 +296,231 @@ ul {
   font-weight: 400;
   font-size: 14px;
   color: #9a9a9a;
+}
+
+@media (max-width: 1270px) {
+  .center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+  }
+}
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 446px);
+    padding-right: calc(50% - 446px);
+  }
+  .header__menu {
+    gap: 32px;
+  }
+  .top {
+    background-size: 55%;
+    background-position: 100% 100px;
+  }
+  .top__container {
+    max-width: 530px;
+  }
+  .top__description {
+    max-width: 450px;
+  }
+  .top__image {
+    scale: 0.7;
+  }
+  .top__image1 {
+    right: 150px;
+    top: 110px;
+  }
+  .top__image2 {
+    scale: 0.7;
+    right: 0;
+    top: 110px;
+  }
+  .top__image3 {
+    top: 370px;
+    right: 180px;
+  }
+  .top__image4 {
+    right: -70px;
+    top: 280px;
+  }
+}
+@media (min-width: 834px) and (max-width: 934px) {
+  .center {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+  .header__menu {
+    gap: 24px;
+  }
+  .top__description {
+    max-width: 370px;
+  }
+}
+@media (min-width: 768px) and (max-width: 833px) {
+  .center {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .header__logo {
+    font-size: 24px;
+  }
+  .header__button {
+    width: 148px;
+  }
+  .header__nav {
+    gap: 16px;
+  }
+  .header__menu {
+    gap: 16px;
+  }
+  .top {
+    background-position: 100% 150px;
+  }
+  .top__container {
+    max-width: 530px;
+  }
+  .top__description {
+    max-width: 350px;
+  }
+  .top__button {
+    width: 306px;
+  }
+  .top__image {
+    scale: 0.5;
+  }
+  .top__image1 {
+    right: 100px;
+    top: 110px;
+  }
+  .top__image2 {
+    scale: 0.5;
+    right: -40px;
+    top: 110px;
+  }
+  .top__image3 {
+    top: 330px;
+    right: 110px;
+  }
+  .top__image4 {
+    right: -85px;
+    top: 260px;
+  }
+  .menu__coffee_show {
+    gap: 24px;
+  }
+  .product {
+    width: 218px;
+    height: auto;
+  }
+  .product__img {
+    width: inherit;
+  }
+}
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header__logo {
+    content: url(../img/grain_logo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  .header__link {
+    font-size: 14px;
+  }
+  .header__button {
+    content: url(../img/Call.svg);
+    width: 30px;
+    height: 30px;
+    border: none;
+  }
+  .header__nav {
+    gap: 8px;
+  }
+  .header__menu {
+    gap: 8px;
+  }
+  .top {
+    height: auto;
+    background-image: none;
+  }
+  .top__container {
+    align-items: center;
+  }
+  .top__title {
+    padding-top: 50px;
+    font-size: 40px;
+    text-align: center;
+  }
+  .top__subtitle {
+    font-size: 24px;
+    text-align: center;
+  }
+  .top__description {
+    font-size: 16px;
+    text-align: center;
+  }
+  .top__images {
+    display: none;
+  }
+  .top__button {
+    width: 320px;
+  }
+  .menu__container {
+    gap: 16px;
+  }
+  .menu__container {
+    justify-content: center;
+  }
+  .menu__filter {
+    flex-wrap: wrap;
+  }
+  .menu__coffee_show {
+    justify-content: center;
+  }
+  .menu__dessert_show {
+    justify-content: center;
+  }
+  .menu__appertizes_show {
+    justify-content: center;
+  }
+}
+@media (max-width: 374px) {
+  .center {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .header__link {
+    font-size: 12px;
+  }
+  .header__nav {
+    gap: 4px;
+  }
+  .header__menu {
+    gap: 4px;
+  }
+  .top__container {
+    max-width: 300px;
+  }
+  .top__title {
+    padding-top: 70px;
+    font-size: 32px;
+  }
+  .top__subtitle {
+    font-size: 24px;
+  }
+  .top__description {
+    font-size: 16px;
+  }
+  .top__button {
+    width: 300px;
+  }
+  .menu__container {
+    justify-content: center;
+  }
 }/*# sourceMappingURL=style.css.map */
