@@ -184,6 +184,65 @@ ul {
         position: absolute;
         bottom: 80px;
     }
+    &__window {
+        background-color: rgba(0, 0, 0, 0.5);
+        background-size: 100%;
+    }
+    &__modal {
+        width: 379px;
+        height: 360px;
+        border-radius: 24px;
+        border: 1px solid #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        padding: 30px 20px;
+        background-color: #fff;
+
+    }
+    &__h {
+        font-size: 24px;
+        color: #45403D;
+        text-align: center;
+    }
+    &__p {
+        padding-top: 12px;
+        font-size: 14px;
+        color: #000000;
+        padding-bottom: 24px;
+        text-align: center;
+    }
+    &__inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    &__input {
+        outline: none;
+        width: 339px;
+        height: 47px;
+        border: 1px solid #DEDEDE;
+        border-radius: 24px;
+        padding: 14px 48px 16px 24px;
+        font-family: inherit;
+    }
+    &__input::placeholder {
+        color: #9A9A9A;
+    }
+    &__btn { 
+        margin-top: 24px;
+        width: 339px;
+        height: 47px;
+        font-family: inherit;
+        background-color: #fff;
+        color: #A26539;
+        font-size: 14px;
+        font-weight: 600;
+        border: 1px solid #A26539;
+        border-radius: 24px;
+        padding: 14px;
+    }
 }
 
 .menu {
