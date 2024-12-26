@@ -182,13 +182,16 @@ ul {
   right: 29px;
   top: 300px;
 }
+.top__window {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .top__bottom {
   position: absolute;
   bottom: 80px;
-}
-.top__window {
-  background-color: rgba(0, 0, 0, 0.5);
-  background-size: 100%;
 }
 .top__modal {
   width: 379px;
