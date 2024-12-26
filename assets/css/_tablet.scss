@@ -1,0 +1,83 @@
+@media (min-width: 834px) and (max-width: 934px) {
+    .center {
+      padding-left: 48px;
+      padding-right: 48px;
+    }
+    .header {
+        &__menu {
+            gap: 24px;
+        }
+    }
+    .top {
+        &__description {
+            max-width: 370px;
+        }
+    }
+}
+@media (max-width: 910px) {
+    
+}
+@media (min-width: 768px) and (max-width: 833px) {
+    .center {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+    .header {
+        &__logo {
+            font-size: 24px;
+        }
+        &__button {
+            width: 148px;
+        }
+        &__nav {
+            gap: 16px;
+        }
+        &__menu {
+            gap: 16px;
+        }
+    }
+    .top {
+        background-position: 100% 150px;
+        &__container {
+            max-width: 530px;
+        }
+        &__description {
+            max-width: 350px;
+        }
+        &__button {
+            width: 306px;
+        }
+        &__image {
+            scale: 0.5;
+        }
+        &__image1 {
+            right: 100px;
+            top: 110px;
+        }
+        &__image2 {
+            scale: 0.5;
+            right: -40px;
+            top: 110px;
+        }
+        &__image3 {
+            top: 330px;
+            right: 110px;
+        }
+        &__image4 {
+            right: -85px;
+            top: 260px;
+        }
+        
+    }
+    .menu__coffee_show {
+        gap: 24px;
+    }
+    .product {
+        width: 218px;
+        height: auto;
+        &__img {
+            width: inherit;
+        }
+    }
+}
+
