@@ -254,6 +254,12 @@ ul {
         border: 1px solid #A26539;
         border-radius: 24px;
         padding: 14px;
+        transition: all 0.3s;
+    }
+    &__btn:hover {
+        color: #fff;
+        background-color: #A26539;
+        
     }
 }
 
