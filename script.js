@@ -27,3 +27,12 @@ btnThree.addEventListener("click", function() {
     document.getElementById("dessert").classList.remove("menu__dessert_show");
     document.getElementById("appertizes").classList.toggle("menu__appertizes_show");
 });
+
+window.onscroll = () => {
+    const div = document.getElementById('filter');
+    if (window.scrollY >= div.offsetTop) {
+      div.classList.add('fixed');
+    } else {
+      div.classList.remove('fixed');
+    }
+};

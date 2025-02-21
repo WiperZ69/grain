@@ -183,6 +183,12 @@ ul {
   top: 300px;
 }
 
+.fixed {
+  position: fixed;
+  top: 60px;
+  z-index: 100;
+}
+
 .menu {
   padding-top: 64px;
   padding-bottom: 64px;
@@ -201,6 +207,7 @@ ul {
 .menu__filter {
   display: flex;
   gap: 7px;
+  transition: top 0.3s;
 }
 .menu__content {
   margin-top: 48px;
