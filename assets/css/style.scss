@@ -180,12 +180,12 @@ ul {
         right: 29px;
         top: 300px;
     }
-    &__bottom {
-        position: absolute;
-        bottom: 80px;
-    }
 }
-
+.fixed { 
+    position: fixed; 
+    top: 60px;
+    z-index: 100;
+}
 .menu {
     padding-top: 64px;
     padding-bottom: 64px;
@@ -203,6 +203,7 @@ ul {
     &__filter {
         display: flex;
         gap: 7px;
+        transition: top 0.3s;
     }
     &__content {
         margin-top: 48px;

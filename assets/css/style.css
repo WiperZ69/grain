@@ -182,9 +182,11 @@ ul {
   right: 29px;
   top: 300px;
 }
-.top__bottom {
-  position: absolute;
-  bottom: 80px;
+
+.fixed {
+  position: fixed;
+  top: 60px;
+  z-index: 100;
 }
 
 .menu {
@@ -205,6 +207,7 @@ ul {
 .menu__filter {
   display: flex;
   gap: 7px;
+  transition: top 0.3s;
 }
 .menu__content {
   margin-top: 48px;
