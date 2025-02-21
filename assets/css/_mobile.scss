@@ -1,0 +1,121 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .header {
+        &__logo {
+            content: url(../img/grain_logo.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        &__link {
+            font-size: 14px;
+        }
+        &__button {
+            content: url(../img/Call.svg);
+            width: 30px;
+            height: 30px;
+            border: none;
+        }
+        &__nav {
+            gap: 8px;
+        }
+        &__menu {
+            gap: 8px;
+        }
+    }
+    .top {
+        height: auto;
+        background-image: none;
+        &__container {
+            align-items: center;
+        }
+        &__title {
+            padding-top: 50px;
+            font-size: 40px;
+            text-align: center;
+        }
+        &__subtitle {
+            font-size: 24px;
+            text-align: center;
+        }
+        &__description {
+            font-size: 16px;
+            text-align: center;
+        }
+        &__images {
+            display: none;
+        }
+        &__button {
+            width: 320px;
+        }
+    }
+    .menu {
+        &__container {
+            gap: 16px;
+        }
+        &__container {
+            justify-content: center;
+        }
+        &__filter {
+            flex-wrap: wrap;
+        }
+        &__coffee_show {
+            justify-content: center;
+        }
+        &__dessert_show {
+            justify-content: center;
+        }
+        &__appertizes_show {
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 374px) {
+    .center {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .header {
+
+        &__link {
+            font-size: 12px;
+        }
+        &__nav {
+            gap: 4px;
+        }
+        &__menu {
+            gap: 4px;
+        }
+    }
+    .top {
+        &__container {
+            max-width: 300px;
+        }
+        &__title {
+            padding-top: 70px;
+            font-size: 32px;
+        }
+        &__subtitle {
+            font-size: 24px;
+        }
+        &__description {
+            font-size: 16px;
+        }
+        &__button {
+            width: 300px;
+        }
+    }
+    .menu {
+        &__container {
+            justify-content: center;
+        }
+    }
+}

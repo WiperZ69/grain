@@ -6,14 +6,30 @@
     <title>Зёрнышко</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="./assets/css/snow.min.css" rel="stylesheet">
 </head>
 <body>
+    <script src="Snow.js"></script>
+    <script>
+	new Snow ({
+			showSnowBalls: false,
+			showSnowBallsIsMobile: false,
+			showSnowflakes: true,
+			countSnowflake: 100,
+			snowBallsLength: 10,
+			snowBallIterations: 40,
+			snowBallupNum: 1,
+			snowBallIterationsInterval: 1000,
+			clearSnowBalls: 2e4,
+		});
+    </script>
     <header class="header center">
         <div class="header__container">
+            
             <div class="header__logo"><a href="#">ЗЕРНЫШКО</a></div>
             <nav class="header__nav">
                 <ul class="header__menu">
-                    <li class="header__item"><a href="#about" class="header__link">О нас</a></li>
+                    <li class="header__item"><a href="#about" class="header__link">О&nbsp;нас</a></li>
                     <li class="header__item"><a href="#menu" class="header__link">Меню</a></li>
                     <li class="header__item"><a href="#reviews" class="header__link">Отзывы</a></li>
                     <li class="header__item"><a href="#contacts" class="header__link">Контакты</a></li>
@@ -28,9 +44,16 @@
                     <h1 class="top__title">Добро пожаловать <br>в «Зернышко»</h1>
                     <p class="top__subtitle">Ароматный кофе и уютная атмосфера каждый день</p>
                     <p class="top__description">
-                        Мы готовим кофе с душой и верим, что каждая чашка — это маленькое наслаждение, созданное для вас.
+                        Мы готовим кофе с душой и верим, что каждая чашка — это маленькое наслаждение, созданное для вас.</br>
+                        Мы предлагаем свежие зерна, уникальные авторские рецепты и заботу о природе. Наши бариста рады подарить вам вкус и уют, из-за которых захочется возвращаться снова и снова.
                     </p>
                     <a href="#menu" class="top__button">Посмотреть меню</a>
+                </div>
+                <div class="top__images">
+                    <div class="top__image1 top__image"><img class="top__img" src="./assets/img/coffee.png" alt="Кофе"></div>
+                    <div class="top__image2"><img class="top__img" src="./assets/img/grains.png" alt="Зерна"></div>
+                    <div class="top__image3 top__image"><img class="top__img" src="./assets/img/cookie.png" alt="Печенье"></div>
+                    <div class="top__image4 top__image"><img class="top__img" src="./assets/img/sinabon.png" alt="Синабон"></div>
                 </div>
                 <div id="menu" class="top__bottom"></div>
         </section>
@@ -248,5 +271,6 @@
         </section>
     </main>
     <script src="./script.js"></script>
+
 </body>
 </html>
